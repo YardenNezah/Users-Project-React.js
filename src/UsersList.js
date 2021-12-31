@@ -19,7 +19,7 @@ const UsersList = ({usersData}) => {
 
     //Filtering and mapping the users:
     const UsersMapping = () => {
-        let filteredUsers = usersData.filter(user => user.name.first.toLowerCase().includes(searchInput.toLowerCase()));
+        let filteredUsers = usersData.filter(user => user.email.toLowerCase().includes(searchInput.toLowerCase()) || (user.name.first[0].toLowerCase()+user.name.last.toLowerCase()).includes(searchInput.toLowerCase()));
         if (genderInput !== "All") {
             filteredUsers = filteredUsers.filter(user => user.gender === genderInput);
         }

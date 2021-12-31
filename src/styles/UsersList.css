@@ -38,6 +38,13 @@ h1 {
     background-color: white;
 }
 
+.genderSelect {
+    height: 35px;
+}
+
+option {
+    color: black;
+}
 .removeFiltersBtn {
     background-color: var(--body-bg);
     border: none;
