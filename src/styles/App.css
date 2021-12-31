@@ -1,0 +1,14 @@
+:root {
+    --body-bg: rgb(222, 222, 236);
+    --table-bg: rgb(149, 149, 187);
+    --text-shadow: rgb(121, 121, 156);
+    --box-shadow: rgba(6, 0, 72, 0.25);
+    --dark-blue: #020067;
+    --header-blue: #170049;
+    --email-popup: rgb(137, 137, 204);
+}
+  
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

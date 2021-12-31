@@ -1,0 +1,149 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backLink {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.backLink:hover {
+    color: var(--dark-blue);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.userDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 4px 26px 5px var(--box-shadow);
+    width: 20rem;
+    height: 35rem;
+    font-size: 1.3rem;
+    border-radius: 2%;
+}
+
+.userDetailsHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.profilePic {
+    border: 1px solid black;
+}
+
+.profilePic:hover {
+    border: 1px solid white;
+}
+ 
+a, .email {
+    text-decoration: none;
+    color: black;
+} 
+
+.email:hover {
+    text-decoration: underline;
+}
+
+.secondary iframe {
+    width: 400px;
+    height: 615px;
+    margin-left: 20px;
+}
+
+.send-email {
+    width: 200px;
+    height: 25px;
+    border-radius: 30px;
+    margin: 15px;
+    background-color: var(--email-popup);
+    color: black;
+    text-decoration: none;
+    padding: 8px 25px 0 0;
+    font-size: 14px;
+}
+
+.send-email::before {
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid var(--email-popup);
+    border-left: 15px solid transparent;
+    content: "";
+    position: relative;
+    bottom: 33px;
+    left: 130px;
+}
+
+/* Media queries for responsive design: */
+@media screen and (max-width: 830px) {
+    .secondary iframe {
+        width: 250px;
+        height: 615px;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .wrapper {
+        margin: 70px;
+        flex-direction: column;
+    }
+    .secondary iframe {
+        width: 550px;
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    h2, .backLink {
+        font-size: 1.2rem;
+    }
+    .userDetailsContainer {
+        padding: 20px;
+        width: 25rem;
+        height: 30rem;
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    .secondary iframe {
+        width: 25rem;
+        height: 30rem;
+    }
+    .send-email {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 475px) {
+    h2, .backLink {
+        font-size: 1rem;
+    }
+    .secondary iframe {
+        width: 20rem;
+    }
+    .userDetailsContainer {
+        padding: 10px;
+        width: 20rem;
+        height: 30rem;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 355px) {
+    .secondary iframe, .userDetailsContainer {
+        width: 15rem;
+        height: 25rem;
+    }
+}

@@ -1,0 +1,146 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    background-color: var(--body-bg);
+}
+
+table {
+    background-color:  var(--table-bg);
+    border: 2px solid white;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: var(--dark-blue);
+    text-shadow: 2px 2px var(--text-shadow);
+    height: 30px;
+}
+
+.searchAndFilterContainer {
+    margin: 10px;
+}
+
+.age-input {
+    width: 60px;
+}
+
+.searchAndFilterInput {
+    margin: 0 25px 5px 25px;
+    height: 30px;
+    font-size: 1rem;
+    border: solid 1px black;
+    color: grey;
+    background-color: white;
+}
+
+.removeFiltersBtn {
+    background-color: var(--body-bg);
+    border: none;
+}
+
+.removeFiltersBtn:hover {
+    color: var(--table-bg);
+}
+
+.tableContainer {
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    box-shadow: 0px 8px 36px 10px var(--box-shadow);
+}
+
+.tableHeader {
+    background-color: var(--header-blue);
+    color: white;
+}
+
+th, td {
+    padding: 12px 20px 12px 20px;
+    border: 1px solid white;
+}
+
+img {
+    width: 70px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+/* Media queries for responsive design: */
+@media screen and (max-width: 880px) {
+    th, td {
+        padding: 6px 10px;
+    }
+}
+@media screen and (max-width: 760px) {
+    th, td {
+        padding: 3px 5px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    th, td {
+        padding: 1px 3px;
+        font-size: 13px;
+    }
+    .profilePic {
+        width: 60px;
+        height: 60px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    input[type="text"],input[type="number"], option, .searchAndFilterInput {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 510px) {
+    th, td, input[type="text"],input[type="number"], option, .searchAndFilterInput {
+        font-size: 11px;
+    }
+    .profilePic {
+        width: 50px;
+        height: 50px;
+    }
+    .searchAndFilterInput {
+        height: 25px;
+    }
+}
+@media screen and (max-width: 430px) {
+    th, td, input[type="text"],input[type="number"], option, .searchAndFilterInput, .removeFiltersBtn {
+        font-size: 9px;
+    }
+    th, td {
+        height: 50px;
+    }
+    .profilePic {
+        width: 30px;
+        height: 30px;
+    }
+    .age-input {
+        width: 40px;
+    }
+    .email-td {
+        word-break: break-all;
+    }
+}
+@media screen and (max-width: 355px) {
+    th, td {
+        font-size: 8px;
+        height: 40px;
+    }
+    .profilePic {
+        width: 20px;
+        height: 20px;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    .searchAndFilterInput {
+        margin: 0 15px 2px 15px;
+        height: 20px;
+    }
+}
