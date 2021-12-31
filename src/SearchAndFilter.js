@@ -3,7 +3,7 @@ import './styles/UsersList.css';
 
 const SearchAndFilter = ({searchInput, ageInput, genderInput, setAgeInput, setSearchInput, setGenderInput, UsersMapping}) => {
 
-    //Handling remove filters request:
+    //Handling remove filters request
     const removeFilters = (e) => {
         e.preventDefault();
         setGenderInput("All");
