@@ -1,0 +1,48 @@
+.page {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    margin: 10px;
+    font-weight: 500;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    width: 30px;
+    padding: 4px 2px;
+}
+
+.page:hover {
+    color: var(--table-bg);
+    background-color: white;
+}
+
+.pageSelector {
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 55%;
+}
+
+/* Media queries for responsive design: */
+@media screen and (max-width: 610px) {
+    .pageSelector {
+        margin: 5px;
+    }
+    .page {
+        font-size: 1rem;
+        margin: 5px;
+        padding: 5px 0;
+    }
+} 
+@media screen and (max-width: 410px) {
+    .pageSelector {
+        margin: 2px;
+    }
+    .page {
+        font-size: 0.7rem;
+        margin: 3px;
+        padding-top: 5px;
+        width: 25px;
+        height: 13px;
+    }
+} 
