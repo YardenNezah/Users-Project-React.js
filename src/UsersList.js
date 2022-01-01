@@ -17,7 +17,6 @@ const UsersList = ({usersData}) => {
         page = 1;
     }
 
-    //Filtering and mapping the users:
     const UsersMapping = () => {
         let filteredUsers = usersData.filter(user => user.email.toLowerCase().includes(searchInput.toLowerCase()) || (user.name.first[0].toLowerCase()+user.name.last.toLowerCase()).includes(searchInput.toLowerCase()));
         if (genderInput !== "All") {

@@ -25,8 +25,12 @@ h1 {
     margin: 10px;
 }
 
-.age-input {
+.ageInput {
     width: 60px;
+}
+
+.genderSelect {
+    height: 35px;
 }
 
 .searchAndFilterInput {
@@ -38,13 +42,10 @@ h1 {
     background-color: white;
 }
 
-.genderSelect {
-    height: 35px;
-}
-
 option {
     color: black;
 }
+
 .removeFiltersBtn {
     background-color: var(--body-bg);
     border: none;
@@ -66,7 +67,7 @@ option {
 }
 
 th, td {
-    padding: 12px 20px 12px 20px;
+    padding: 12px 20px;
     border: 1px solid white;
 }
 
@@ -106,7 +107,7 @@ img {
 }
 @media screen and (max-width: 510px) {
     th, td, input[type="text"],input[type="number"], option, .searchAndFilterInput {
-        font-size: 11px;
+        font-size: 10px;
     }
     .profilePic {
         width: 50px;
@@ -127,10 +128,10 @@ img {
         width: 30px;
         height: 30px;
     }
-    .age-input {
+    .ageInput {
         width: 40px;
     }
-    .email-td {
+    .emailTd {
         word-break: break-all;
     }
 }

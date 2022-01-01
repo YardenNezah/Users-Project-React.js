@@ -14,7 +14,7 @@ const SearchAndFilter = ({searchInput, ageInput, genderInput, setAgeInput, setSe
     return (
         <form className='searchAndFilterContainer'>
             <input value={searchInput} onChange={(e) => setSearchInput(e.target.value) && UsersMapping()} type="text" className="searchAndFilterInput" placeholder="Search by name or email"/>
-            <input value={ageInput} onChange={(e) => setAgeInput(e.target.value) && UsersMapping()} type="number" min="18" className="searchAndFilterInput age-input" placeholder='Age'/>
+            <input value={ageInput} onChange={(e) => setAgeInput(e.target.value) && UsersMapping()} type="number" min="18" className="searchAndFilterInput ageInput" placeholder='Age'/>
             <select defaultValue={genderInput} onChange={(e) => setGenderInput(e.target.value) && UsersMapping()} className="searchAndFilterInput genderSelect">
                 <option value="All" disabled hidden className='gender'>Gender</option>
                 <option value="All">All</option>

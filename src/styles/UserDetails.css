@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
-.pageContainer {
+.pageContainer, .userDetailsHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,13 +33,12 @@
     border-radius: 2%;
 }
 
-.userDetailsHeader {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+span {
+    font-weight: bold;
+    margin-top: 20px;
 }
 
-.profile-img {
+.profileImg {
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -56,10 +55,12 @@
 a, .email {
     text-decoration: none;
     color: black;
+    font-weight: 400;
 } 
 
 .email:hover {
     text-decoration: underline;
+    color: blue;
 }
 
 .secondary iframe {
@@ -68,7 +69,7 @@ a, .email {
     margin-left: 20px;
 }
 
-.send-email {
+.emailPopup {
     width: 200px;
     height: 25px;
     border-radius: 30px;
@@ -80,7 +81,7 @@ a, .email {
     font-size: 14px;
 }
 
-.send-email::before {
+.emailPopup::before {
     border-right: 15px solid transparent;
     border-bottom: 15px solid var(--email-popup);
     border-left: 15px solid transparent;
@@ -123,7 +124,7 @@ a, .email {
         width: 25rem;
         height: 30rem;
     }
-    .send-email {
+    .emailPopup {
         font-size: 0.8rem;
     }
 }

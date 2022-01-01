@@ -16,7 +16,7 @@ const User = ({user}) => {
                         {user.name.first[0] + user.name.last}
                     </Link>
                 </td>
-                <td className='email-td'>
+                <td className='emailTd'>
                     <a href={`mailto:${user.email}`} className="email"> {user.email}</a>
                 </td>
                 <td>{user.gender}</td>

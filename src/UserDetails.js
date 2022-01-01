@@ -7,23 +7,22 @@ const UserDetails = ({usersData}) => {
     //Get the username from the query params:
     const {username} = useParams();
 
-    //Find, beautify, and render:
     const LoadUser = () => {
         const [isShown, setIsShown] = useState(false);
         return usersData.map(user => {
             if(user.login.username === username) {
             return (
                 <div className="wrapper">
-                    <div className='primary'>
+                    <div>
                         <div key={username} className="userDetailsContainer">
                             <div className='userDetailsHeader'>
-                                <img src={user.picture.medium} alt="profilePic" className="profile-img"/>
+                                <img src={user.picture.medium} alt="profilePic" className="profileImg"/>
                                 <h2>{`${user.name.first} ${user.name.last}`}</h2>
                             </div>
-                            <p><strong>Gender:</strong> {user.gender}</p>
-                            <p><strong>Age:</strong> {user.dob.age}</p>
-                            <p><strong>Phone Number: </strong>{user.cell}</p> <br />
-                            <strong>Email:</strong><a href={`mailto:${user.email}`} onMouseEnter={
+                            <span>Gender:</span> {user.gender}
+                            <span>Age:</span> {user.dob.age}
+                            <span>Phone Number: </span>{user.cell} <br />
+                            <span>Email:</span><a href={`mailto:${user.email}`} onMouseEnter={
                             () => setIsShown(true)
                         }
                         onMouseLeave={
@@ -31,7 +30,7 @@ const UserDetails = ({usersData}) => {
                     }>
                       <span className='email'>{user.email}</span>  {
                         isShown && (
-                            <div className="send-email">
+                            <div className="emailPopup">
                                 Click me to send an Email!
                             </div>
                         )

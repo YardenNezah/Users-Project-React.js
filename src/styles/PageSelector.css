@@ -1,3 +1,11 @@
+.pageSelector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 55%;
+    margin: 25px;
+}
+
 .page {
     text-decoration: none;
     color: white;
@@ -13,14 +21,6 @@
 .page:hover {
     color: var(--table-bg);
     background-color: white;
-}
-
-.pageSelector {
-    margin: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 55%;
 }
 
 /* Media queries for responsive design: */
