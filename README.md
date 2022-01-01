@@ -22,7 +22,7 @@ A component, used for searching and filtering the content inside the UsersList c
 1. The states associated with the textboxes, allowing them to update.    
 2.  A function for filtering and searching the users.     
  
-- ### UsersList > User.js
+- ### User.js
 A child component for the UsersList table, showing each and every user.
 #### Input (props):
 1. User object.
